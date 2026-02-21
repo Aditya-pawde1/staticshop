@@ -9,11 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Restore cache
-        id: cache-step
+      - id: cache-step
         uses: actions/cache@v4
         with:
           path: ~/.cache/cache-98f36df
